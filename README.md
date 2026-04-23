@@ -5,7 +5,9 @@ The utility is being evaluated at certain depths by using a linear utility funct
 
 Actions are ordered by capture-first.
 
-Minimax is implemented as a flexible Depth Limited Search by calculating a fixed depth for each turn of max based on the number of legal moves of the root to limit the number of expanded nodes. Thus a depth of 4-5 plies is being achieved 
+Minimax is implemented as a flexible Depth Limited Search by calculating a fixed depth for each turn of max based on the number of legal moves of the root to limit the number of expanded nodes. Thus a depth of 4-5 plies is being achieved.
+
+As a first implementation Python was used for simplicity. For better performance an implementation in C++ was also done.
 
 # Further Improvements
 Due to the consideration of mobility in the utility function, max is able to play a more dynamic game, but the endgame still suffers from random moves. Further improvements might include the use of endgame tablebases and openings.
